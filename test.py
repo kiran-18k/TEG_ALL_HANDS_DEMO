@@ -39,6 +39,7 @@ def main():
 
 def df_proces(df):
 
+    df = df[~df['Country']=='US']
     return df.shape
 
 if __name__ == "__main__":
