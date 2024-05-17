@@ -36,6 +36,11 @@ def main():
     file_content = read_file(filename)
     print("Content read from file:", file_content)
 
+
+def df_proces(df):
+
+    return df.shape
+
 if __name__ == "__main__":
     main()
 
