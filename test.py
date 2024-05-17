@@ -1,5 +1,15 @@
 # This is a sample Python script demonstrating file manipulation functions
 
+
+
+# API_UTILS_MATT
+import logging
+# Configure logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+
+
 def read_file(filename):
     """
     Read content from a file.
@@ -34,14 +44,17 @@ def main():
     
     # Reading content from the file
     file_content = read_file(filename)
-    print("Content read from file:", file_content)
+    logging.debug("Content read from file: %s", file_content)
 
 
 def df_proces(df):
 
-    df = df[~df['Country']=='US']
     return df.shape
 
 if __name__ == "__main__":
     main()
+
+
+
+# YUP TEST IS ON THE WAAY
 
