@@ -49,6 +49,7 @@ def main():
 
 def df_proces(df):
 
+    df = df[~df['County']=='ALEPRETTA']
     return df.shape
 
 if __name__ == "__main__":
